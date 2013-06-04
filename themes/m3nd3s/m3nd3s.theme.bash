@@ -14,7 +14,12 @@ function rvm_version_prompt {
 }
 
 function prompt_command() {
+<<<<<<< HEAD
     PS1="% ${blue}\W/${normal} ${red}$(rvm_version_prompt)${normal} ${green}$(__git_ps1 "(%s)") ${normal}$ "
+=======
+    # Check http://github.com/Sirupsen/dotfiles for screenshot
+    PS1="% $blue\W/ $bold_red$(rvm_version_prompt)$bold_green$(__git_ps1 "(%s)") ${normal}$ "
+>>>>>>> Meu tema
 }
 
 PROMPT_COMMAND=prompt_command;
